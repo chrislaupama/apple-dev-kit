@@ -11,9 +11,9 @@ A personal Claude Code plugin for building SwiftUI apps without Bitrig. It is ad
 | `skills/` | 25 skills. Guidance skills are copied as-is; build, project, simulator, provisioning, CloudKit, Supabase, push and App Store Connect skills are rewritten to drop Bitrig's tools. |
 | `skills/sf-symbols-catalog/build-index.py` | Rebuilds the SF Symbols index from macOS's own catalog (run after macOS updates). |
 | `reference/bitrig-system-prompt.original.md` | The unmodified Bitrig prompt, for comparison. |
-| `bin/apple-api` | Looks up APIs and their availability in the installed SDK's Swift interfaces (`apple-api SwiftUI 'func glassEffect'`, `apple-api SwiftUI --new 27`). Replaces Bitrig's docs search for "does this exist in my SDK?". |
+| `bin/apple-api` | Looks up APIs and their availability in the installed SDK's Swift interfaces (`apple-api SwiftUI 'func glassEffect'`, `apple-api SwiftUI --new 27`). Answers "does this exist in my SDK?" offline; Xcode's `DocumentationSearch` covers the prose docs. |
 
-`plugins/xcode-integration/` is Apple's own Claude plugin from Xcode 27. It provides the Xcode MCP server (`xcrun mcpbridge`) with 51 tools and 15 Apple-authored skills. `scripts/sync-xcode-plugin.sh` copies it from Xcode; run that again after every Xcode update. Its tools need Xcode running with the project open.
+`plugins/xcode-integration/` is Apple's own Claude plugin from Xcode 27. It provides the Xcode MCP server (`xcrun mcpbridge`) with 52 tools and 15 Apple-authored skills. `scripts/sync-xcode-plugin.sh` copies it from Xcode; run that again after every Xcode update. Its tools need Xcode running with the project open.
 
 Dropped: `bitrig-product-support`, `bitrig-github-project`, `selected-ui-elements` (Bitrig-only features).
 
@@ -42,4 +42,4 @@ Also install the third-party plugins Bitrig bundled from their upstream sources:
 - No CloudKit token helper: the user saves cktool tokens themselves (`xcrun cktool save-token`).
 - No Supabase secret sheet: the user pastes secrets in the Supabase dashboard.
 - Simulator control comes from Xcode's device-interaction tools (Xcode must be open); there's no click-to-select element context.
-- No simulator camera shim and no app-icon generator. Docs come from Apple's what's-new skills, `apple-api` and Apple's documentation JSON; Xcode 27's MCP server has no docs-search tool.
+- No simulator camera shim and no app-icon generator. Docs come from Xcode's `DocumentationSearch` tool (needs Xcode running), Apple's what's-new skills and `apple-api`.

@@ -76,9 +76,10 @@ This project is an app for Apple platforms (iPhone, iPad, Apple Watch, Apple TV,
 - New APIs introduced in the 27 releases can be used, but MUST have their availability guarded for every platform you target, using the matching version for each. For example `@available(iOS 27.0, macOS 27.0, watchOS 27.0, tvOS 27.0, visionOS 27.0, *)` or `if #available(iOS 27.0, *) { ... }`
 - Only use an API if it is available in the SDK the user has
 - For details on new APIs, don't rely on prior knowledge:
+  - Search Apple's current documentation with Xcode's `DocumentationSearch` tool (from the `xcode-integration` plugin), passing `frameworks` (for example `["SwiftUI"]`) to keep results focused. It returns full articles, often tens of kilobytes, so search for something specific. It needs Xcode running and this agent approved; if it says the agent isn't approved, open the project with `XcodeOpenWorkspace` first.
   - Load the `xcode-integration:swiftui-whats-new-27` or `xcode-integration:app-intents-whats-new-27` skill for what changed in the 27 releases, and `xcode-integration:swiftui-specialist` for Apple's current SwiftUI best practices.
   - Check exact signatures and availability in the user's SDK with `apple-api <Framework> '<regex>'` (or `apple-api <Framework> --new 27` for everything new). It reads the installed SDK's Swift interfaces, including SwiftUICore and the `_X_SwiftUI` overlays. If it finds nothing, the API isn't in this SDK.
-  - For prose documentation, fetch Apple's documentation JSON with your web tools, for example `https://developer.apple.com/tutorials/data/documentation/swiftui/view.json`.
+  - Without Xcode's tools, fetch Apple's documentation JSON with your web tools, for example `https://developer.apple.com/tutorials/data/documentation/swiftui/view.json`.
 
 ## Swift Code Style
 - Prefer `var` for stored properties in structs; reserve `let` for preserving invariants
