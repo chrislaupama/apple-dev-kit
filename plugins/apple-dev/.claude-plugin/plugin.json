@@ -1,0 +1,8 @@
+{
+  "name": "apple-dev",
+  "description": "Personal SwiftUI app-building kit adapted from Bitrig's bundled skills: SwiftUI guidelines, Apple HIG, project (XcodeGen Project.json) and platform setup, xc build/preview/test tool, simulator, CloudKit, Supabase, notifications, extensions, purchases, and App Store Connect via the asc CLI. Private, personal use only.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Chris Laupama"
+  }
+}

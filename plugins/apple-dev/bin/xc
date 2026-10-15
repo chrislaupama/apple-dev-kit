@@ -1,0 +1,373 @@
+#!/bin/bash
+# xc — build, preview and test Apple-platform projects with XcodeGen + xcodebuild.
+# A stand-in for Bitrig's `bitrig` CLI. Run from anywhere inside the project (or pass -C <path>).
+set -uo pipefail
+
+PY=/usr/bin/python3
+EX_FAIL=65 EX_USAGE=64 EX_SOFTWARE=70
+
+usage() {
+    cat <<'EOF'
+usage: xc preview -platform <name> [-platform <name> ...] [-scheme <name>] [-device <name|udid>]
+                  [-configuration Debug|Release] [-verbose]
+       xc build   [-platform <name> ...] [-scheme <name>] [-configuration Debug|Release] [-verbose]
+       xc test    [-scheme <name>] [-platform <name>] [-device <name|udid>] [-testPlan <name>]
+                  [-only-testing:<test> ...] [-skip-testing:<test> ...] [-verbose]
+       xc provision [-platform <name> ...] [-scheme <name>]
+       xc gen | xc list [-json] | xc sims [<platform>] | xc logs [<platform>]
+
+  -platform   iOS (default), macOS, watchOS, tvOS or visionOS. Simulator builds for all but macOS.
+  -scheme     Defaults to the first application target's scheme.
+  -device     Simulator name ("iPhone 17 Pro") or UDID. Defaults to the booted simulator of
+              that platform, else the newest matching device, which xc boots.
+  -C <path>   Project folder (default: walk up from the current directory).
+
+preview    Builds, installs and launches on a simulator (or opens the Mac app). Run it after
+           finishing changes that affect the app so the user sees them.
+build      Builds only, to check that the code compiles.
+test       Runs the scheme's tests (iOS simulator by default; -platform macOS for the Mac).
+provision  Builds for a real device with -allowProvisioningUpdates so Xcode registers the
+           App ID and capabilities (iCloud, push, Sign in with Apple…) with the signing team.
+gen        Regenerates the Xcode project from Project.json / project.yml (XcodeGen).
+list       Lists targets and schemes.  sims: lists simulators.  logs: streams the app's log.
+
+When Project.json or project.yml exists, every command regenerates the Xcode project first.
+Each build writes a full log and prints its path, the errors, and a closing
+** BUILD SUCCEEDED ** / ** BUILD FAILED ** line.
+Exit status: 0 success, 65 build/tests failed, 64 usage error, 70 internal error.
+EOF
+}
+
+die() { echo "xc: $*" >&2; exit "$EX_SOFTWARE"; }
+usage_error() { echo "xc: $*" >&2; echo "Run 'xc help' for usage." >&2; exit "$EX_USAGE"; }
+
+# ---------- project discovery ----------
+
+find_root() {
+    local dir="$1"
+    while [ "$dir" != "/" ]; do
+        if [ -f "$dir/Project.json" ] || [ -f "$dir/project.yml" ] || [ -f "$dir/project.json" ] \
+            || compgen -G "$dir/*.xcworkspace" >/dev/null || compgen -G "$dir/*.xcodeproj" >/dev/null; then
+            echo "$dir"; return 0
+        fi
+        dir=$(dirname "$dir")
+    done
+    return 1
+}
+
+spec_file() {
+    local f
+    for f in Project.json project.json project.yml project.yaml; do
+        [ -f "$ROOT/$f" ] && { echo "$ROOT/$f"; return 0; }
+    done
+    return 1
+}
+
+generate() {
+    local spec
+    spec=$(spec_file) || return 0
+    command -v xcodegen >/dev/null || die "XcodeGen is not installed (brew install xcodegen)"
+    if ! xcodegen generate --spec "$spec" --project-root "$ROOT" --use-cache --quiet >"$LOG_DIR/xcodegen.log" 2>&1; then
+        cat "$LOG_DIR/xcodegen.log" >&2
+        echo "** PROJECT GENERATION FAILED ** ($spec)" >&2
+        exit "$EX_FAIL"
+    fi
+}
+
+container_args() {
+    local ws proj
+    for ws in "$ROOT"/*.xcworkspace; do
+        [ -d "$ws" ] && { CONTAINER=(-workspace "$ws"); return; }
+    done
+    for proj in "$ROOT"/*.xcodeproj; do
+        [ -d "$proj" ] && { CONTAINER=(-project "$proj"); return; }
+    done
+    die "no .xcodeproj or .xcworkspace in $ROOT"
+}
+
+default_scheme() {
+    xcodebuild "${CONTAINER[@]}" -list -json 2>/dev/null | "$PY" -I -c '
+import json, sys
+data = json.load(sys.stdin)
+info = data.get("workspace") or data.get("project") or {}
+schemes = info.get("schemes", [])
+targets = info.get("targets", [])
+for t in targets:
+    if t in schemes:
+        print(t); break
+else:
+    print(schemes[0] if schemes else "")
+'
+}
+
+# ---------- simulators ----------
+
+# Prints "udid<TAB>name<TAB>state" for the chosen simulator.
+pick_simulator() {
+    local platform="$1" wanted="$2"
+    xcrun simctl list devices available -j | "$PY" -I -c '
+import json, re, sys
+platform, wanted = sys.argv[1], sys.argv[2]
+key = {"iOS": "iOS", "watchOS": "watchOS", "tvOS": "tvOS", "visionOS": "xrOS"}[platform]
+prefer = {"iOS": r"^iPhone \d+ Pro$", "watchOS": r"Series|Ultra", "tvOS": r"4K", "visionOS": r"Vision"}[platform]
+devices = []
+for runtime, items in json.load(sys.stdin)["devices"].items():
+    m = re.search(r"SimRuntime\.%s-([\d-]+)$" % key, runtime)
+    if not m:
+        continue
+    version = tuple(int(p) for p in m.group(1).split("-"))
+    for d in items:
+        devices.append((version, d))
+if wanted:
+    for _, d in sorted(devices, key=lambda x: x[0], reverse=True):
+        if wanted in (d["udid"], d["name"]):
+            print("\t".join([d["udid"], d["name"], d["state"]])); sys.exit(0)
+    sys.exit("no available %s simulator named %r (see: xc sims %s)" % (platform, wanted, platform))
+booted = [x for x in devices if x[1]["state"] == "Booted"]
+pool = booted or devices
+if not pool:
+    sys.exit("no %s simulators installed; add a runtime in Xcode > Settings > Components" % platform)
+def rank(x):
+    version, d = x
+    return (bool(re.search(prefer, d["name"])), version)
+_, d = max(pool, key=rank)
+print("\t".join([d["udid"], d["name"], d["state"]]))
+' "$platform" "$wanted"
+}
+
+boot_simulator() {
+    local udid="$1" state="$2"
+    if [ "$state" != "Booted" ]; then
+        xcrun simctl boot "$udid" >/dev/null 2>&1 || true
+    fi
+    open -g -a Simulator --args -CurrentDeviceUDID "$udid" >/dev/null 2>&1 || true
+    xcrun simctl bootstatus "$udid" >/dev/null 2>&1 || true
+}
+
+# ---------- building ----------
+
+destination_for() {
+    local platform="$1" udid="${2:-}"
+    if [ -n "$udid" ]; then echo "id=$udid"; return; fi
+    case "$platform" in
+        macOS) echo "platform=macOS" ;;
+        *) echo "generic/platform=$platform Simulator" ;;
+    esac
+}
+
+# run_xcodebuild <label> <args...>: runs xcodebuild, logs everything, prints a summary.
+run_xcodebuild() {
+    local label="$1"; shift
+    local log="$LOG_DIR/$(date +%Y%m%d-%H%M%S)-$label.log"
+    echo "xc: $label — log: $log" >&2
+    local status
+    if [ "$VERBOSE" = 1 ]; then
+        xcodebuild "$@" 2>&1 | tee "$log" >&2
+        status=${PIPESTATUS[0]}
+    else
+        xcodebuild "$@" >"$log" 2>&1
+        status=$?
+    fi
+    LAST_LOG="$log"
+    summarize "$log" "$status"
+    return "$status"
+}
+
+summarize() {
+    local log="$1" status="$2"
+    "$PY" -I - "$log" "$status" <<'PYEOF'
+import re, sys
+log, status = sys.argv[1], int(sys.argv[2])
+errors, warnings, seen = [], 0, set()
+for line in open(log, errors="replace"):
+    line = line.rstrip()
+    if re.search(r"(^|: )(fatal )?error: ", line) and line not in seen:
+        seen.add(line); errors.append(line)
+    elif re.search(r": warning: ", line):
+        warnings += 1
+for e in errors[:40]:
+    print(e, file=sys.stderr)
+if len(errors) > 40:
+    print("… %d more errors in the log" % (len(errors) - 40), file=sys.stderr)
+if status != 0 and not errors:
+    tail = open(log, errors="replace").read().splitlines()[-25:]
+    print("\n".join(tail), file=sys.stderr)
+print("%d error(s), %d warning(s)" % (len(errors), warnings), file=sys.stderr)
+PYEOF
+}
+
+# Prints the built product path for scheme/configuration/destination.
+product_path() {
+    local scheme="$1" dest="$2"
+    xcodebuild "${CONTAINER[@]}" -scheme "$scheme" -configuration "$CONFIG" -destination "$dest" \
+        -derivedDataPath "$DERIVED" -showBuildSettings -json 2>/dev/null | "$PY" -I -c '
+import json, sys
+scheme = sys.argv[1]
+entries = json.load(sys.stdin)
+apps = [e["buildSettings"] for e in entries if e["buildSettings"].get("WRAPPER_EXTENSION") == "app"]
+pick = next((s for s in apps if s.get("TARGET_NAME") == scheme), apps[0] if apps else None)
+if pick:
+    print(pick["TARGET_BUILD_DIR"] + "/" + pick["FULL_PRODUCT_NAME"])
+' "$scheme"
+}
+
+build_one() {
+    local platform="$1" dest="$2"
+    shift 2
+    local extra=("$@")
+    run_xcodebuild "build-$platform" "${CONTAINER[@]}" -scheme "$SCHEME" -configuration "$CONFIG" \
+        -destination "$dest" -derivedDataPath "$DERIVED" ${extra[@]+"${extra[@]}"} build
+}
+
+# ---------- commands ----------
+
+cmd_build() {
+    [ ${#PLATFORMS[@]} -eq 0 ] && PLATFORMS=(iOS)
+    local p failed=0
+    for p in "${PLATFORMS[@]}"; do
+        if build_one "$p" "$(destination_for "$p")"; then
+            echo "app: $(product_path "$SCHEME" "$(destination_for "$p")")"
+        else
+            failed=1; break
+        fi
+    done
+    if [ $failed = 0 ]; then echo "** BUILD SUCCEEDED **"; else echo "** BUILD FAILED **"; exit "$EX_FAIL"; fi
+}
+
+cmd_preview() {
+    [ ${#PLATFORMS[@]} -eq 0 ] && usage_error "preview needs -platform (iOS, macOS, watchOS, tvOS or visionOS)"
+    local p
+    for p in "${PLATFORMS[@]}"; do
+        if [ "$p" = macOS ]; then
+            local dest; dest=$(destination_for macOS)
+            build_one macOS "$dest" || { echo "** BUILD FAILED **"; exit "$EX_FAIL"; }
+            local app; app=$(product_path "$SCHEME" "$dest")
+            [ -n "$app" ] || die "could not find the built Mac app"
+            local exe; exe=$(/usr/libexec/PlistBuddy -c 'Print CFBundleExecutable' "$app/Contents/Info.plist" 2>/dev/null)
+            [ -n "$exe" ] && pkill -x "$exe" 2>/dev/null && sleep 0.5
+            open "$app"
+            echo "launched: $app (Mac)"
+            continue
+        fi
+        local sim udid name state
+        sim=$(pick_simulator "$p" "$DEVICE") || exit "$EX_SOFTWARE"
+        IFS=$'\t' read -r udid name state <<<"$sim"
+        boot_simulator "$udid" "$state"
+        local dest="id=$udid"
+        build_one "$p" "$dest" || { echo "** BUILD FAILED **"; exit "$EX_FAIL"; }
+        local app; app=$(product_path "$SCHEME" "$dest")
+        [ -n "$app" ] || die "could not find the built app for $p"
+        local bundle_id; bundle_id=$(/usr/libexec/PlistBuddy -c 'Print CFBundleIdentifier' "$app/Info.plist")
+        xcrun simctl install "$udid" "$app" || die "install failed on $name"
+        xcrun simctl launch --terminate-running-process "$udid" "$bundle_id" >/dev/null || die "launch failed on $name"
+        echo "launched: $bundle_id on $name ($udid)"
+    done
+    echo "** BUILD SUCCEEDED **"
+}
+
+cmd_test() {
+    local p="${PLATFORMS[0]:-iOS}" dest
+    if [ "$p" = macOS ]; then
+        dest="platform=macOS"
+    else
+        local sim udid name state
+        sim=$(pick_simulator "$p" "$DEVICE") || exit "$EX_SOFTWARE"
+        IFS=$'\t' read -r udid name state <<<"$sim"
+        dest="id=$udid"
+    fi
+    local result="$LOG_DIR/$(date +%Y%m%d-%H%M%S)-test.xcresult"
+    if run_xcodebuild "test-$p" "${CONTAINER[@]}" -scheme "$SCHEME" -configuration "$CONFIG" \
+        -destination "$dest" -derivedDataPath "$DERIVED" -resultBundlePath "$result" \
+        ${PASSTHROUGH[@]+"${PASSTHROUGH[@]}"} test; then
+        echo "resultBundle: $result"; echo "** TEST SUCCEEDED **"
+    else
+        grep -E "Test (Case|case) .* failed|error: -\[|XCTAssert|#expect|Issue recorded" "$LAST_LOG" | head -40 >&2
+        echo "resultBundle: $result"; echo "** TEST FAILED **"; exit "$EX_FAIL"
+    fi
+}
+
+cmd_provision() {
+    [ ${#PLATFORMS[@]} -eq 0 ] && PLATFORMS=(iOS)
+    local p
+    for p in "${PLATFORMS[@]}"; do
+        local dest="generic/platform=$p"
+        [ "$p" = macOS ] && dest="generic/platform=macOS"
+        build_one "provision-$p" "$dest" -allowProvisioningUpdates \
+            || { echo "** PROVISIONING FAILED ** — check the log: is an Apple account signed in to Xcode and DEVELOPMENT_TEAM set?"; exit "$EX_FAIL"; }
+    done
+    echo "** PROVISIONING SUCCEEDED **"
+}
+
+cmd_logs() {
+    local p="${PLATFORMS[0]:-${1:-iOS}}" sim udid name state
+    sim=$(pick_simulator "$p" "$DEVICE") || exit "$EX_SOFTWARE"
+    IFS=$'\t' read -r udid name state <<<"$sim"
+    local proc="$SCHEME"
+    echo "xc: streaming logs for process '$proc' on $name (Ctrl-C to stop)" >&2
+    exec xcrun simctl spawn "$udid" log stream --level debug --style compact --predicate "process == \"$proc\""
+}
+
+# ---------- argument parsing ----------
+
+COMMAND="${1:-help}"; [ $# -gt 0 ] && shift
+case "$COMMAND" in help|-h|--help) usage; exit 0 ;; esac
+
+PLATFORMS=() PASSTHROUGH=() SCHEME="" DEVICE="" CONFIG="Debug" VERBOSE=0 JSON=0 START_DIR="$PWD" POSITIONAL=()
+while [ $# -gt 0 ]; do
+    case "$1" in
+        -platform) [ $# -ge 2 ] || usage_error "-platform needs a value"
+            case "$2" in iOS|macOS|watchOS|tvOS|visionOS) PLATFORMS+=("$2") ;; *) usage_error "unknown platform '$2'" ;; esac
+            shift 2 ;;
+        -scheme) SCHEME="${2:?}"; shift 2 ;;
+        -device) DEVICE="${2:?}"; shift 2 ;;
+        -configuration) CONFIG="${2:?}"; shift 2 ;;
+        -C) START_DIR="${2:?}"; shift 2 ;;
+        -verbose) VERBOSE=1; shift ;;
+        -json) JSON=1; shift ;;
+        -testPlan) PASSTHROUGH+=(-testPlan "${2:?}"); shift 2 ;;
+        -only-testing:*|-skip-testing:*) PASSTHROUGH+=("$1"); shift ;;
+        -*) usage_error "unknown option '$1'" ;;
+        *) POSITIONAL+=("$1"); shift ;;
+    esac
+done
+
+if [ "$COMMAND" = sims ]; then
+    if [ ${#POSITIONAL[@]} -gt 0 ]; then
+        key="${POSITIONAL[0]}"; [ "$key" = visionOS ] && key=xrOS
+        xcrun simctl list devices available | awk -v k="$key" '/^-- /{show = index($0, k) > 0} show'
+    else
+        xcrun simctl list devices available
+    fi
+    exit 0
+fi
+
+ROOT=$(find_root "$(cd "$START_DIR" && pwd)") || usage_error "no Xcode project, workspace or Project.json found above $START_DIR"
+HASH=$(printf '%s' "$ROOT" | shasum | cut -c1-10)
+PROJECT_NAME=$(basename "$ROOT")
+PROJECT_NAME=${PROJECT_NAME//[^A-Za-z0-9._-]/_}
+DERIVED="${XC_DERIVED_DATA:-$HOME/Library/Developer/Xcode/DerivedData/xc-$PROJECT_NAME-$HASH}"
+LOG_DIR="$DERIVED/xc-logs"
+mkdir -p "$LOG_DIR"
+# Keep the 20 most recent logs.
+ls -1t "$LOG_DIR" 2>/dev/null | tail -n +21 | while read -r old; do rm -rf "$LOG_DIR/$old"; done
+
+generate
+[ "$COMMAND" = gen ] && { echo "xc: generated Xcode project in $ROOT"; exit 0; }
+container_args
+
+if [ "$COMMAND" = list ]; then
+    if [ $JSON = 1 ]; then xcodebuild "${CONTAINER[@]}" -list -json; else xcodebuild "${CONTAINER[@]}" -list; fi
+    exit $?
+fi
+
+[ -n "$SCHEME" ] || SCHEME=$(default_scheme)
+[ -n "$SCHEME" ] || die "could not determine a scheme; pass -scheme (see: xc list)"
+
+case "$COMMAND" in
+    build) cmd_build ;;
+    preview) cmd_preview ;;
+    test) cmd_test ;;
+    provision) cmd_provision ;;
+    logs) cmd_logs ${POSITIONAL[@]+"${POSITIONAL[@]}"} ;;
+    *) usage_error "unknown command '$COMMAND'" ;;
+esac

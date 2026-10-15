@@ -1,0 +1,1566 @@
+{
+  "conversion" : "Apple Markdown preserved verbatim except link destinations to bundled HIG pages and their Markdown heading anchors",
+  "formatVersion" : 2,
+  "generatedAt" : "2026-09-14T20:20:28Z",
+  "pages" : [
+    {
+      "characters" : 25935,
+      "file" : "accessibility.md",
+      "markdownSHA256" : "de62ff4db60fcc5046a5a5c3c6766e9a2649937d68380cb5e21d34488209438d",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/accessibility.md",
+      "sourceSHA256" : "805c8ca0605279c1521e5d096833ca029a6f459ed55bd20eeefb8837fbc6cb6f",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/accessibility",
+      "topic" : "accessibility"
+    },
+    {
+      "characters" : 5634,
+      "file" : "action-button.md",
+      "markdownSHA256" : "ed58e164eedbf094e62dc5fdf84650b62563e634b9ffb3cd6d3448bab2a9c622",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/action-button.md",
+      "sourceSHA256" : "d185aeb1eaa43675ea084b26620b0dcdc84abdc30a1a23fbec65ac1107e8c573",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/action-button",
+      "topic" : "action-button"
+    },
+    {
+      "characters" : 5873,
+      "file" : "action-sheets.md",
+      "markdownSHA256" : "62448ca25c6bad3ab6a2c8500127a970701735e84b29c5999c3e850d02fe139f",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/action-sheets.md",
+      "sourceSHA256" : "a96a8423c853ec9856b65cdcd6b02b83e26774421083bcbe96fd6c51278ac303",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/action-sheets",
+      "topic" : "action-sheets"
+    },
+    {
+      "characters" : 8030,
+      "file" : "activity-rings.md",
+      "markdownSHA256" : "29ad888632c9c43f39de1e4cdf03975ba05fe515d7caebd3f99da5cc4bb0e13c",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/activity-rings.md",
+      "sourceSHA256" : "2447bced58a853ae2edfec9c67d5a5c18ac01534b9effaec5bbc525ac6df8865",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/activity-rings",
+      "topic" : "activity-rings"
+    },
+    {
+      "characters" : 7972,
+      "file" : "activity-views.md",
+      "markdownSHA256" : "7b686e312b9b4f08c49fa8a6c6764c502adc2ced3059575ccf1bc263da678fc1",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/activity-views.md",
+      "sourceSHA256" : "40913c9134c240bdf968036b73621526965314cfcf156bd942e8649659e018a3",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/activity-views",
+      "topic" : "activity-views"
+    },
+    {
+      "characters" : 10199,
+      "file" : "airplay.md",
+      "markdownSHA256" : "14f0d0dcc90322086185fb2379dd2423fb3016523038386c25fa4f6c8ce77123",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/airplay.md",
+      "sourceSHA256" : "14f0d0dcc90322086185fb2379dd2423fb3016523038386c25fa4f6c8ce77123",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/airplay",
+      "topic" : "airplay"
+    },
+    {
+      "characters" : 12514,
+      "file" : "alerts.md",
+      "markdownSHA256" : "f3e3bef0d9a3754a254a8c973b8916ae504ac3bd5c17bb066f9eadfd8ee6660e",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/alerts.md",
+      "sourceSHA256" : "1ac5a9671344a11f5e5af6fbcf8dead79230177fcdf82fcf450fefa53ac6c16d",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/alerts",
+      "topic" : "alerts"
+    },
+    {
+      "characters" : 4863,
+      "file" : "always-on.md",
+      "markdownSHA256" : "a7d1877824cd79f41a7b8cb03364b6ebc31a855ef0678de32420e46469b1ef3d",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/always-on.md",
+      "sourceSHA256" : "395355d1f6d091bd5aaf1f3807e68952fcb0c565f202708ea08dfa50b2c0e74b",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/always-on",
+      "topic" : "always-on"
+    },
+    {
+      "characters" : 36909,
+      "file" : "app-clips.md",
+      "markdownSHA256" : "fdc516b08caa48a61984c9728c436136a18927b66c6f7ae4062404c838bff0c7",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/app-clips.md",
+      "sourceSHA256" : "32de63a4f9ff87f67f6b637c6748e00ae1c8179ce995c65d02627d841e742a54",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/app-clips",
+      "topic" : "app-clips"
+    },
+    {
+      "characters" : 19490,
+      "file" : "app-icons.md",
+      "markdownSHA256" : "2f30e27429ebf229485f10f4ebb4226c1082a178a2fcc09ccb489d8d4e4c5d71",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/app-icons.md",
+      "sourceSHA256" : "2f6e8afad1eb79c9c2adad7a5c8fbf8aa6c8cf279e7bff8f22eca32e07cd3f78",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/app-icons",
+      "topic" : "app-icons"
+    },
+    {
+      "characters" : 10397,
+      "file" : "app-shortcuts.md",
+      "markdownSHA256" : "caf2dd280212eb679d2ea6576ec748819a3876d1b9feb4ad42731e3ace626724",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/app-shortcuts.md",
+      "sourceSHA256" : "223391273a8b9d20a4be9388c9703f785cc38bc8373d7d86e96888efada0a897",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/app-shortcuts",
+      "topic" : "app-shortcuts"
+    },
+    {
+      "characters" : 44804,
+      "file" : "apple-pay.md",
+      "markdownSHA256" : "4688298342b917b0d393e21228479eee5b20ff81fa5cde3cf03292192ea349bf",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/apple-pay.md",
+      "sourceSHA256" : "565d3ffabb4c5781942de15913448566ca666adb59ce2f53a572f9331f7b7fad",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/apple-pay",
+      "topic" : "apple-pay"
+    },
+    {
+      "characters" : 18302,
+      "file" : "apple-pencil-and-scribble.md",
+      "markdownSHA256" : "81d65943b435f05ef39273211ec24b306d9ea1795d7bc2e4192c19477459cdb6",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/apple-pencil-and-scribble.md",
+      "sourceSHA256" : "0e121e7d91999eb6e95413bdf38944713f68a1ebde988ed2df0cf1ea22fd4054",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/apple-pencil-and-scribble",
+      "topic" : "apple-pencil-and-scribble"
+    },
+    {
+      "characters" : 30315,
+      "file" : "augmented-reality.md",
+      "markdownSHA256" : "05497fae7a93d851589a074f128cd7fd089f15b80e1eb41baa5d17aab824f066",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/augmented-reality.md",
+      "sourceSHA256" : "9011060475037cb479a9a4bd9ef158676ff31e1da648197d4a460203e9c7d48a",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/augmented-reality",
+      "topic" : "augmented-reality"
+    },
+    {
+      "characters" : 2500,
+      "file" : "boxes.md",
+      "markdownSHA256" : "47a523f5d90c7710d74f2bdf0f615a2249c29ed99781306db9ae6272864057a9",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/boxes.md",
+      "sourceSHA256" : "c5052796f1e255abc2c3092955f3f67f29968b9bccb11681635d2b383c20ca79",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/boxes",
+      "topic" : "boxes"
+    },
+    {
+      "characters" : 5769,
+      "file" : "branding.md",
+      "markdownSHA256" : "af998e9658ab188ca978b8451d464078a8a24cd22ca5574025ac6e4e015571f8",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/branding.md",
+      "sourceSHA256" : "d425c17a500e4d24d64b0771b0318255f2de4600850cc278c9afb4568162c8a4",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/branding",
+      "topic" : "branding"
+    },
+    {
+      "characters" : 23365,
+      "file" : "buttons.md",
+      "markdownSHA256" : "51f90870639a0fddc26c7041f138de1b17910bc67b0acb9b3b2f5cf61a59ef7c",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/buttons.md",
+      "sourceSHA256" : "b7e913ad5df44596e52f203caa2ecf257d7a64e32b86db503c9d3e259a4779f9",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/buttons",
+      "topic" : "buttons"
+    },
+    {
+      "characters" : 8033,
+      "file" : "camera-control.md",
+      "markdownSHA256" : "e85910c5d9204b2ab0633c9e4e9dc2ed9c3fdff2bf7c1cb56531c51de9a5ffc4",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/camera-control.md",
+      "sourceSHA256" : "c209b029220751aef3f91d3e2118cff52eed05ab1a30b465b698e4cb99355404",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/camera-control",
+      "topic" : "camera-control"
+    },
+    {
+      "characters" : 23056,
+      "file" : "carekit.md",
+      "markdownSHA256" : "d445560a42d814311a1d325fa4c0aaf337f97aee5fa8ede093f5c102ccb5ca26",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/carekit.md",
+      "sourceSHA256" : "155171b4f2e656cd6699102fa4b586e4a697cb5a462f16da0b387654d830d8f4",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/carekit",
+      "topic" : "carekit"
+    },
+    {
+      "characters" : 9332,
+      "file" : "carplay.md",
+      "markdownSHA256" : "2de9afa5dc784042e7863b1a6bcf0d71ce45bf8dfbbc3ea97173a02741321ed3",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/carplay.md",
+      "sourceSHA256" : "9f788260df6772b8eab87809a4903eda9e7ccd4d78d9518ad79caede2fa6f049",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/carplay",
+      "topic" : "carplay"
+    },
+    {
+      "characters" : 8442,
+      "file" : "charting-data.md",
+      "markdownSHA256" : "c5387fdf51e6364fe5fef5d5c1224ff4e4416b885337c33d0e18a7ac4de0adbd",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/charting-data.md",
+      "sourceSHA256" : "f1b86ebcc8ff1fd5bc089ee7a20e28b17c19f65334c04827579b33b84410f3fe",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/charting-data",
+      "topic" : "charting-data"
+    },
+    {
+      "characters" : 22920,
+      "file" : "charts.md",
+      "markdownSHA256" : "e9bfbd4accf0c18b0f33c1d0b1147fa7b368092894bc03fc34168d5c57c6aff0",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/charts.md",
+      "sourceSHA256" : "65aac4796fa40a5e71bcd999fe9ed6811e6f4a04c8bfacd00d3299d6128e310e",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/charts",
+      "topic" : "charts"
+    },
+    {
+      "characters" : 9056,
+      "file" : "collaboration-and-sharing.md",
+      "markdownSHA256" : "1e1811d67bf8f26b42b7281ca252d262ff03ed3a71b0b41ed42edc228ef02578",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/collaboration-and-sharing.md",
+      "sourceSHA256" : "3acbf73cea6b68c45467b21344398ff60d2d7a2d7c188702afe7f04c9e53208d",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/collaboration-and-sharing",
+      "topic" : "collaboration-and-sharing"
+    },
+    {
+      "characters" : 2825,
+      "file" : "collections.md",
+      "markdownSHA256" : "7b07f5bebcce1697ee5a3add29985737446e50a5aaff0d9b7b241dff78069d99",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/collections.md",
+      "sourceSHA256" : "c20b32976b6262cde5f46decdfce3871305d5df0091744e130be8324286f6546",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/collections",
+      "topic" : "collections"
+    },
+    {
+      "characters" : 41512,
+      "file" : "color.md",
+      "markdownSHA256" : "69a9db88aca29ac4aeee6293a8ba5955c98d5da6934bbb14d7f9109a325285f7",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/color.md",
+      "sourceSHA256" : "8dead19ac81e59b84454687d2ff916b4a6a960ad568fbca8c3896a12a9d74060",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/color",
+      "topic" : "color"
+    },
+    {
+      "characters" : 2298,
+      "file" : "color-wells.md",
+      "markdownSHA256" : "ab2a28860c1816a340b141d65d32d33aa5483f3dff5310e3f673b4e1b01d216e",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/color-wells.md",
+      "sourceSHA256" : "92edaa95ae474c207d534c880a0cb8f7190b4785e5e5ef72bca7f2be485df8e6",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/color-wells",
+      "topic" : "color-wells"
+    },
+    {
+      "characters" : 2762,
+      "file" : "column-views.md",
+      "markdownSHA256" : "5a1d27d8f2dfb8cb3f87abde2122a703a07252eb019d20bf022d0f9a619017de",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/column-views.md",
+      "sourceSHA256" : "1d2c9fafad9e8fc5740e251f066ae252a5fe1252ef5438ed8840f80d65797cab",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/column-views",
+      "topic" : "column-views"
+    },
+    {
+      "characters" : 2142,
+      "file" : "combo-boxes.md",
+      "markdownSHA256" : "87315848969be12a4a38ffdae4682b08d545a2989ffbb0cc43c3e12826b3bfe6",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/combo-boxes.md",
+      "sourceSHA256" : "1e48669ba5e7e0c751a4324a29a7702cb0d53561827cd9327dbf7d1c86acb863",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/combo-boxes",
+      "topic" : "combo-boxes"
+    },
+    {
+      "characters" : 35281,
+      "file" : "complications.md",
+      "markdownSHA256" : "620d09acd18fc3292b9c8cd55ddf5acfa02783661318c14a3a0015f59679feb3",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/complications.md",
+      "sourceSHA256" : "1f31a872d27283c0150c58c009b4ed64325013584c33a092e50708becedd716b",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/complications",
+      "topic" : "complications"
+    },
+    {
+      "characters" : 1234,
+      "file" : "components.md",
+      "markdownSHA256" : "56ef442d2794fbe7cf8a67c164d20f1942f3f880ac2e515e9c4416b7bb51396f",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/components.md",
+      "sourceSHA256" : "a5fbc0aaad1bdba53f6f4d6e12479a2bb2cdd69f786f460b3038df064f2c5004",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/components",
+      "topic" : "components"
+    },
+    {
+      "characters" : 1524,
+      "file" : "content.md",
+      "markdownSHA256" : "f11bad569b79a5ba6dbfec8a35de9d1b5050893a551b370bc64cbbd6339ca10e",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/content.md",
+      "sourceSHA256" : "8845c1fddf2408b07e15093f6d40bd080e8eb75a5619a7241cd8af6d890c6729",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/content",
+      "topic" : "content"
+    },
+    {
+      "characters" : 9853,
+      "file" : "context-menus.md",
+      "markdownSHA256" : "45703f190b00c270936840cfbf78745088799e56540d6e5c79e85805d4f51d49",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/context-menus.md",
+      "sourceSHA256" : "5935c35eee74d272a440123a9465605ed8b2780c365e128f7973db0b94597d7e",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/context-menus",
+      "topic" : "context-menus"
+    },
+    {
+      "characters" : 9521,
+      "file" : "controls.md",
+      "markdownSHA256" : "c2d939cde0da1eb29221541ed15416f019f711c12b92346b21755f224b646d3f",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/controls.md",
+      "sourceSHA256" : "86f56831d36ef93d8b4e9eb867f2d9dfa44a3d83d4f99017d9978415c5830c32",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/controls",
+      "topic" : "controls"
+    },
+    {
+      "characters" : 11525,
+      "file" : "dark-mode.md",
+      "markdownSHA256" : "b4b66ee482fffcbfc1449ea87282118301d1c639f7e3f6b519e606595facf0c5",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/dark-mode.md",
+      "sourceSHA256" : "8ea0eaf7931a210516f661797c5496e0cda9109c763f087ad82e44e257f60e72",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/dark-mode",
+      "topic" : "dark-mode"
+    },
+    {
+      "characters" : 11324,
+      "file" : "design-principles.md",
+      "markdownSHA256" : "1d58f4ac8c033025225560a953feeb8b51c25d9369a92aa0c210b0550453e3e2",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/design-principles.md",
+      "sourceSHA256" : "1d58f4ac8c033025225560a953feeb8b51c25d9369a92aa0c210b0550453e3e2",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/design-principles",
+      "topic" : "design-principles"
+    },
+    {
+      "characters" : 16793,
+      "file" : "designing-for-games.md",
+      "markdownSHA256" : "41218d4ddde0823cb49c05ea960ffe8685434f020ae8e43a680f699ec3c409d0",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/designing-for-games.md",
+      "sourceSHA256" : "9b0ded384d5aa975603d4401157c4de693a2b2e2400321345b39d4ca9a966cf9",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/designing-for-games",
+      "topic" : "designing-for-games"
+    },
+    {
+      "characters" : 4418,
+      "file" : "designing-for-ios.md",
+      "markdownSHA256" : "baf2b345bf873d6873eb671b6c0766b751c5ba0eeb145e53f2edb10f7e14c8d7",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/designing-for-ios.md",
+      "sourceSHA256" : "de601c559c11e469a1fed11697bc3e935b37918b38d56cab94d0bb3a43a00ef7",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/designing-for-ios",
+      "topic" : "designing-for-ios"
+    },
+    {
+      "characters" : 3909,
+      "file" : "designing-for-ipados.md",
+      "markdownSHA256" : "d3d00bd5154b0479afbf05a03a12b1b577da0dade9c7d58a07ee5dee8d695996",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/designing-for-ipados.md",
+      "sourceSHA256" : "00594e638da7198ed6faead92ff2fe8a988c7fabdc3a70ef218300fb3e3ad15b",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/designing-for-ipados",
+      "topic" : "designing-for-ipados"
+    },
+    {
+      "characters" : 22103,
+      "file" : "designing-for-iphone-duo.md",
+      "markdownSHA256" : "bf68bf461d130962f25452b99d28bc383f008a5e6f4d2115f9c18f994ce22f1b",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/designing-for-iphone-duo.md",
+      "sourceSHA256" : "3480ef77daa55ac28548e448354be2c6782a3ecf77ff271bb4d7fe036177d589",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/designing-for-iphone-duo",
+      "topic" : "designing-for-iphone-duo"
+    },
+    {
+      "characters" : 3972,
+      "file" : "designing-for-macos.md",
+      "markdownSHA256" : "cf76621450ae5f68785e68cbf7f2a8f314a1ca8400a810815997ae2756895653",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/designing-for-macos.md",
+      "sourceSHA256" : "74a7dc6c36d64d05da9034852456dbad996c0d000bcaf6d1e46e4db5ae958466",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/designing-for-macos",
+      "topic" : "designing-for-macos"
+    },
+    {
+      "characters" : 3632,
+      "file" : "designing-for-tvos.md",
+      "markdownSHA256" : "5642729bcdebe4b3511a7c93758f90d0126edbefc638baf7b51499e95b8c40fa",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/designing-for-tvos.md",
+      "sourceSHA256" : "20eccd14882001d445a61cb3fabed5740d79098846e18c61d5a03b4bf2a4c4fe",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/designing-for-tvos",
+      "topic" : "designing-for-tvos"
+    },
+    {
+      "characters" : 8064,
+      "file" : "designing-for-visionos.md",
+      "markdownSHA256" : "b3c4ddae0268ecf1b38aa4b280cb2c9ee5c1fc482fa2a9935c5fa9c59dbde302",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/designing-for-visionos.md",
+      "sourceSHA256" : "8c8d4c447ef4e108c9824c0d1dbd8f2766e39efafce930715e0032552c04851f",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/designing-for-visionos",
+      "topic" : "designing-for-visionos"
+    },
+    {
+      "characters" : 5294,
+      "file" : "designing-for-watchos.md",
+      "markdownSHA256" : "75b428da43781e7534173cb221c3d246975db4b0889649d6f072cacd826003ea",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/designing-for-watchos.md",
+      "sourceSHA256" : "2cb6a74e6d726d6fa84ea8e4c531e8cc62aa91c3f1189dc8e472c9ff684eb5bb",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/designing-for-watchos",
+      "topic" : "designing-for-watchos"
+    },
+    {
+      "characters" : 1530,
+      "file" : "digit-entry-views.md",
+      "markdownSHA256" : "6cad6c498cb3cd72660f0d52844f9d1ea48be9b9360f071206d79187bb78cd1f",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/digit-entry-views.md",
+      "sourceSHA256" : "904e2c572bc5aaff410ecce4589da8795a4e8527bde3e85f5c630f5ded933a56",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/digit-entry-views",
+      "topic" : "digit-entry-views"
+    },
+    {
+      "characters" : 6417,
+      "file" : "digital-crown.md",
+      "markdownSHA256" : "438fd334adc88e6a4cbf4a03a1027b30d382f4447ba141a828ba90957e53d2ba",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/digital-crown.md",
+      "sourceSHA256" : "f31005f228d3950e1d5943199c252939c27c7f99b6651b521211a25cfbda84ca",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/digital-crown",
+      "topic" : "digital-crown"
+    },
+    {
+      "characters" : 5167,
+      "file" : "disclosure-controls.md",
+      "markdownSHA256" : "516f5d3527eeb4ae682bb605a55a28340f0205e73100740df19a351714ad23b5",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/disclosure-controls.md",
+      "sourceSHA256" : "513fa661fb6deefd7852439d25f761b577a78bb5dda78783373cf0f87c6fad2f",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/disclosure-controls",
+      "topic" : "disclosure-controls"
+    },
+    {
+      "characters" : 2529,
+      "file" : "dock-menus.md",
+      "markdownSHA256" : "8c6c89a2966be86d8f19a1703b7a20a0ebed064d36818f9d44ff40e0c9bcd5db",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/dock-menus.md",
+      "sourceSHA256" : "c9e7307d025cbab526a50fbe7574c28e18e2b54eb87ff02da91ec6174db7d5d5",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/dock-menus",
+      "topic" : "dock-menus"
+    },
+    {
+      "characters" : 15899,
+      "file" : "drag-and-drop.md",
+      "markdownSHA256" : "bd0c7bd88477a5508bffd199dc33ba7ce85bc6ac2cefb7f85616a4f1e16df848",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/drag-and-drop.md",
+      "sourceSHA256" : "b1f402486b864568b1fda287d868968ad0bd6317a889b47b92d8ddd6eb619ed4",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/drag-and-drop",
+      "topic" : "drag-and-drop"
+    },
+    {
+      "characters" : 6818,
+      "file" : "edit-menus.md",
+      "markdownSHA256" : "4aea0091b36498ed4973f09932b0676a6526d52c2151b73516392e06cafd625d",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/edit-menus.md",
+      "sourceSHA256" : "e6ffc9e8f2fdf411fbfb53ea431a7bd8ba1de237d25ed0d1fbe4e2cb6d864f2d",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/edit-menus",
+      "topic" : "edit-menus"
+    },
+    {
+      "characters" : 5353,
+      "file" : "entering-data.md",
+      "markdownSHA256" : "3be0d5e7912f1c1e4ea62949a719f3c67e0320d3ef7f5ea6300c78e9956ac094",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/entering-data.md",
+      "sourceSHA256" : "96748d9ca68474da5000afaa35cd23bed744d4d8df8799a343b8e22e4f138cb9",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/entering-data",
+      "topic" : "entering-data"
+    },
+    {
+      "characters" : 11700,
+      "file" : "eyes.md",
+      "markdownSHA256" : "2719d670c44801c393a9130c470a81762f3b2672e8c8eb42cba38df961f1214d",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/eyes.md",
+      "sourceSHA256" : "d2f9b4adb62c6951c4fccff9b31d859507e988b21fdaa2c482c6398194f68568",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/eyes",
+      "topic" : "eyes"
+    },
+    {
+      "characters" : 4756,
+      "file" : "feedback.md",
+      "markdownSHA256" : "d60db077d033601746a942e678e80983abe5d322e629cde2ca4741b35469360d",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/feedback.md",
+      "sourceSHA256" : "e7f88e172045a18218b38cfeadb8d2289ae65744bd279e0551517a56a3d9bafe",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/feedback",
+      "topic" : "feedback"
+    },
+    {
+      "characters" : 12359,
+      "file" : "file-management.md",
+      "markdownSHA256" : "44c776ad4403aeaf639e43d4a77e065dc8d54a60475d10fdc26d951414b7835d",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/file-management.md",
+      "sourceSHA256" : "8c5b5329ce425a3cad6c7e2e128630c6b530658594a6377dfdf630e2d09b4a47",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/file-management",
+      "topic" : "file-management"
+    },
+    {
+      "characters" : 15609,
+      "file" : "focus-and-selection.md",
+      "markdownSHA256" : "0a525f10b31ab8226fb16400bc4fed45140f87a333b7ce1eda2fdb8188188c38",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/focus-and-selection.md",
+      "sourceSHA256" : "24904b7e9f59f551d9f17243bd4609df40b3610607b9847bfdaa49c72c5487d5",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/focus-and-selection",
+      "topic" : "focus-and-selection"
+    },
+    {
+      "characters" : 6892,
+      "file" : "foundations.md",
+      "markdownSHA256" : "12a622bb20e5141abe16ca60de699d8d74825fe0d1ae413177cf0c16852aea7b",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/foundations.md",
+      "sourceSHA256" : "d736677848de2d070004748500ec0d8baac5c3037d8830c59d3ef8ba1a3e4873",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/foundations",
+      "topic" : "foundations"
+    },
+    {
+      "characters" : 25306,
+      "file" : "game-center.md",
+      "markdownSHA256" : "23d8ca53989ba6914662de4fb94f25d3f1d13b18c44dc3fe60a38704e72e7dfe",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/game-center.md",
+      "sourceSHA256" : "e94c276cc11ae2392813dd1a57bcae9a233fa2844da96d8b23bf815d1ff8f789",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/game-center",
+      "topic" : "game-center"
+    },
+    {
+      "characters" : 15055,
+      "file" : "game-controls.md",
+      "markdownSHA256" : "f3787415782ba8c4464271296255fb32d55b01a772fb2883857e5153a316e5a8",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/game-controls.md",
+      "sourceSHA256" : "01c327ef74363e34948935636dc838fec8ac110ebb866374388f9197ebff7b66",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/game-controls",
+      "topic" : "game-controls"
+    },
+    {
+      "characters" : 5161,
+      "file" : "gauges.md",
+      "markdownSHA256" : "e96a06a43c866551dee4515d2c33e08a326c854a00d2e6d069fe24dd4629db09",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/gauges.md",
+      "sourceSHA256" : "e5e2ee5373b5b71d585887300e62056a90f69b815ecad6b9d09fdf4a43bef559",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/gauges",
+      "topic" : "gauges"
+    },
+    {
+      "characters" : 18644,
+      "file" : "generative-ai.md",
+      "markdownSHA256" : "728f77993f62f506e9eb4bdee9bac3cb34848b5313e998f721a691dad9e2df3e",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/generative-ai.md",
+      "sourceSHA256" : "fa73c1454867fc20405fb0118bc3f8716ca75ccfb9d5b6b4087caba7dba0e76c",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/generative-ai",
+      "topic" : "generative-ai"
+    },
+    {
+      "characters" : 20916,
+      "file" : "gestures.md",
+      "markdownSHA256" : "9cd7f09f2a66a92f11dddf81886bb258fa0cef6938effe1d21ba53ffa4784ffe",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/gestures.md",
+      "sourceSHA256" : "4a2a2f1e216ae39bd3fa7e92889bc7b8ee4bb7ac04982a8c52f4c824c49f2a78",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/gestures",
+      "topic" : "gestures"
+    },
+    {
+      "characters" : 4167,
+      "file" : "getting-started.md",
+      "markdownSHA256" : "7ac272122281b5e7fe713123ca8ea5f0c338e114ed2f50329b29e375d821149a",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/getting-started.md",
+      "sourceSHA256" : "c55dbb8d81e63165a152eaf40612e230bc77ab1a02d2316f4532c4c803fd6413",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/getting-started",
+      "topic" : "getting-started"
+    },
+    {
+      "characters" : 7907,
+      "file" : "going-full-screen.md",
+      "markdownSHA256" : "da7596098846d76d5970499e06dadcf470ad938059445680048d411cad9cd11f",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/going-full-screen.md",
+      "sourceSHA256" : "87de7a17d3819bc8754671d8245fd638e588c3f25da0c2c808f3892678b264d0",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/going-full-screen",
+      "topic" : "going-full-screen"
+    },
+    {
+      "characters" : 2409,
+      "file" : "gyro-and-accelerometer.md",
+      "markdownSHA256" : "b5a5dde0d5d7ea964c2569740cb6901395fa657658a16f391f24c4673c2eab82",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/gyro-and-accelerometer.md",
+      "sourceSHA256" : "344d34d423f80ace25435e012b48f479f6c49c6d64576d0933622d3fab4859b5",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/gyro-and-accelerometer",
+      "topic" : "gyro-and-accelerometer"
+    },
+    {
+      "characters" : 11376,
+      "file" : "healthkit.md",
+      "markdownSHA256" : "e864ba7c9fcad556e9fafb205a80807f6e86d06819ba3e238d8421e0852c8d2e",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/healthkit.md",
+      "sourceSHA256" : "04d72bbade0497b01ad09041b0409413c2216bc65aec718d9a136d78997603e3",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/healthkit",
+      "topic" : "healthkit"
+    },
+    {
+      "characters" : 3934,
+      "file" : "home-screen-quick-actions.md",
+      "markdownSHA256" : "c9de90d0e315adfa835d79d000c098ce834d785db6d6d083d29a9f2dd97c96e7",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/home-screen-quick-actions.md",
+      "sourceSHA256" : "bfe251c4dc5c6b16c0b25db20bfcf077eacef72ffb9c34af12603e2d33135ad5",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/home-screen-quick-actions",
+      "topic" : "home-screen-quick-actions"
+    },
+    {
+      "characters" : 30894,
+      "file" : "homekit.md",
+      "markdownSHA256" : "345102cb2e7d7f9905761ea61a86ace1f1636183bff486a1e93745104388c1f2",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/homekit.md",
+      "sourceSHA256" : "6a39dca276ec664f897e1aebcae67debcf865f2b3c845dda5700f733e83f7f33",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/homekit",
+      "topic" : "homekit"
+    },
+    {
+      "characters" : 5426,
+      "file" : "icloud.md",
+      "markdownSHA256" : "96788e8a4727fd66b8dc4944c45d7bba2d01204b62703d9f656962c933c2eb9e",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/icloud.md",
+      "sourceSHA256" : "96788e8a4727fd66b8dc4944c45d7bba2d01204b62703d9f656962c933c2eb9e",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/icloud",
+      "topic" : "icloud"
+    },
+    {
+      "characters" : 26813,
+      "file" : "icons.md",
+      "markdownSHA256" : "fcb91d5aa34bd41880c269ad115e5be97c627a40881a3ecbcdaf956c704feec1",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/icons.md",
+      "sourceSHA256" : "87439569d14db6b966772f49f7cd180deeaac26b5eaa8fbff6072e796c0d9061",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/icons",
+      "topic" : "icons"
+    },
+    {
+      "characters" : 6138,
+      "file" : "id-verifier.md",
+      "markdownSHA256" : "21b23ea6a02d08748c8ae729d42313004e1aa112724f0750ed812023838dcfaf",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/id-verifier.md",
+      "sourceSHA256" : "d6e9220deec7feb4ea9bdc31a04b25dfa373c6b481a654e876a45e066ce78ac5",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/id-verifier",
+      "topic" : "id-verifier"
+    },
+    {
+      "characters" : 4748,
+      "file" : "image-views.md",
+      "markdownSHA256" : "a6d466a8e97eee4fd223f34a2e8fc5b6295fc2de20015976aff417e44820c43c",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/image-views.md",
+      "sourceSHA256" : "813cfdb754a7ad9b881251fe0d8d1586b751e21de5a24902224ab3560ad2fa5b",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/image-views",
+      "topic" : "image-views"
+    },
+    {
+      "characters" : 1676,
+      "file" : "image-wells.md",
+      "markdownSHA256" : "95ed89ef428b9d02531bcc10a270cde726d1ad7edd190b64833e73c4db2d5914",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/image-wells.md",
+      "sourceSHA256" : "d93dcf7eedeea0e3277ba6cdde91e018ae598ef6af986b37ce689c06237820af",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/image-wells",
+      "topic" : "image-wells"
+    },
+    {
+      "characters" : 16661,
+      "file" : "images.md",
+      "markdownSHA256" : "0735117a14af2db965484f422961c4eb44cb04191a0f82a17d73be9ec98648b1",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/images.md",
+      "sourceSHA256" : "02799934e9ca931b0c484eb7370c59045d968938d3f4eac9606d217df1e245a2",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/images",
+      "topic" : "images"
+    },
+    {
+      "characters" : 6813,
+      "file" : "imessage-apps-and-stickers.md",
+      "markdownSHA256" : "090452ab13815be1fd1a2bf3f1aaefeb21998dc3926a8338f02f21380c0cc5f2",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/imessage-apps-and-stickers.md",
+      "sourceSHA256" : "090452ab13815be1fd1a2bf3f1aaefeb21998dc3926a8338f02f21380c0cc5f2",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/imessage-apps-and-stickers",
+      "topic" : "imessage-apps-and-stickers"
+    },
+    {
+      "characters" : 19460,
+      "file" : "immersive-experiences.md",
+      "markdownSHA256" : "d8a03bd192c51413bde300b07f46f134b3ef8c3bfdc0e828bbb500e4e5f52fd5",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/immersive-experiences.md",
+      "sourceSHA256" : "a8c0e70a73e3b0cc3c3494cece852fa3008e8f9cce31de955fa37266ce631747",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/immersive-experiences",
+      "topic" : "immersive-experiences"
+    },
+    {
+      "characters" : 32018,
+      "file" : "in-app-purchase.md",
+      "markdownSHA256" : "3faf95b5544243fbd6738e0f61180fd803b957e301cf99ebff37f625122566be",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/in-app-purchase.md",
+      "sourceSHA256" : "8fe54b182d6c0611aacb959ad5989c1a40b77508b900e768268a52a0eb8d98b5",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/in-app-purchase",
+      "topic" : "in-app-purchase"
+    },
+    {
+      "characters" : 16431,
+      "file" : "inclusion.md",
+      "markdownSHA256" : "19d4d9fbe022bae91b21118084bc4b4f42504902da0d1a514f949dba3fe9d176",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/inclusion.md",
+      "sourceSHA256" : "22db5d272479000af5ab25c43c15ddb292b1d05a30e752a0a034911c95bc6362",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/inclusion",
+      "topic" : "inclusion"
+    },
+    {
+      "characters" : 4223,
+      "file" : "human-interface-guidelines.md",
+      "markdownSHA256" : "a9ad69b2476b3ca8ec187a24635fd6b9161cff7016962dfbd744e15baf392894",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines.md",
+      "sourceSHA256" : "c3eb473ac7deb62b5e766bbc111c0fb3f4a20134349bf10d323a7e80be6352cf",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines",
+      "topic" : "index"
+    },
+    {
+      "characters" : 4363,
+      "file" : "inputs.md",
+      "markdownSHA256" : "ba00d6deaba7fc924210adce0dafd6955f8edc780954955744ba6903298af843",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/inputs.md",
+      "sourceSHA256" : "5700d850b4eac176380c1e93291463ac6c8b91801d17370ae6fad033b9418cdd",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/inputs",
+      "topic" : "inputs"
+    },
+    {
+      "characters" : 39481,
+      "file" : "keyboards.md",
+      "markdownSHA256" : "4c07e4930dabf3d60ee2a39c171df41442a1ddd502ba833178b43bd9be8b551e",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/keyboards.md",
+      "sourceSHA256" : "96850470425944fde6951dd9cc7b843bc60604f509252902c6ebb0326a46b6c1",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/keyboards",
+      "topic" : "keyboards"
+    },
+    {
+      "characters" : 6443,
+      "file" : "labels.md",
+      "markdownSHA256" : "a28402f6507aac26f7af6b566456ff1610504db1a68dc14aa328bb95b28e61db",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/labels.md",
+      "sourceSHA256" : "1afda93914583e8d23038eb6c7f42b2feb81b9aa023c275106c435ae84df8a79",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/labels",
+      "topic" : "labels"
+    },
+    {
+      "characters" : 6072,
+      "file" : "launching.md",
+      "markdownSHA256" : "c80510ac5149faa05e966c9c4f522da0cd0e8531fe812558e92e77659547ae4f",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/launching.md",
+      "sourceSHA256" : "351b27cf25561c7ae19161cfe8b0fbb3678c782c86160256ad2ede101cd803c3",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/launching",
+      "topic" : "launching"
+    },
+    {
+      "characters" : 26790,
+      "file" : "layout.md",
+      "markdownSHA256" : "41ac444f1539baa1575a8f80a5f6fcd94825f727ab086e4b40df58cd15859b49",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/layout.md",
+      "sourceSHA256" : "6d3a45c812f1d753c3bcea8e5b6ecc2be72d3db91d36a6ba04dd8a30f96b1e20",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/layout",
+      "topic" : "layout"
+    },
+    {
+      "characters" : 3330,
+      "file" : "layout-and-organization.md",
+      "markdownSHA256" : "b3548d1c17bbb50205e98e4e5c22cd9a15f9ad7eb44b049fec14806edc329041",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/layout-and-organization.md",
+      "sourceSHA256" : "4934e3f1a16fa75d10e7fa1ccb2ee2d45a30339af838db7a00c98aa641a329b2",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/layout-and-organization",
+      "topic" : "layout-and-organization"
+    },
+    {
+      "characters" : 9228,
+      "file" : "lists-and-tables.md",
+      "markdownSHA256" : "80421ea2db86b01fe2c39173f3d4a6f00048465937712e4992551fe64ec9b4eb",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/lists-and-tables.md",
+      "sourceSHA256" : "a7ed2b4e124636061036cebce49a3f556e29673eee76a051363023f6a2f112a7",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/lists-and-tables",
+      "topic" : "lists-and-tables"
+    },
+    {
+      "characters" : 38431,
+      "file" : "live-activities.md",
+      "markdownSHA256" : "fcaba0c197fd2300fb389b0c5c682d82e17f4060eaf746ae7cb7fbc547d149f8",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/live-activities.md",
+      "sourceSHA256" : "36ad819e8129da110f2f2a7b5c394b32a320ea6106ad60a37c63b0260a58c380",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/live-activities",
+      "topic" : "live-activities"
+    },
+    {
+      "characters" : 3815,
+      "file" : "live-photos.md",
+      "markdownSHA256" : "d9228d596c2a38aaeb1ccadb1b6c81a12912cf06d479e43b717710219bc61de0",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/live-photos.md",
+      "sourceSHA256" : "d9228d596c2a38aaeb1ccadb1b6c81a12912cf06d479e43b717710219bc61de0",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/live-photos",
+      "topic" : "live-photos"
+    },
+    {
+      "characters" : 7175,
+      "file" : "live-viewing-apps.md",
+      "markdownSHA256" : "6a760342a972948d9b973edee76abd0cf4dcef1d0f495ef60a53fc24d646d4b7",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/live-viewing-apps.md",
+      "sourceSHA256" : "c4dd91150d8462d6d540e86a383d2a9c9e04a6ab84fa28ee369fc9884da8994b",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps",
+      "topic" : "live-viewing-apps"
+    },
+    {
+      "characters" : 4487,
+      "file" : "loading.md",
+      "markdownSHA256" : "2f5c57948ea518e9e446e0868a4bb22a9abc1ec8108e4d9d66e663224ebad1fa",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/loading.md",
+      "sourceSHA256" : "304b41f2ae47be6aaac9f0f2c760d8b3322427835663ed72f6f99a7eb20a5555",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/loading",
+      "topic" : "loading"
+    },
+    {
+      "characters" : 4917,
+      "file" : "lockups.md",
+      "markdownSHA256" : "e1aba49d38043ea46b318f1aa34a4eaf8b940a78a27ee691e48aea33ba0f023b",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/lockups.md",
+      "sourceSHA256" : "c0458f2f488711ae6e2c00b70de7a0e42c2f2920e762b42797de0d18bf7f4dff",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/lockups",
+      "topic" : "lockups"
+    },
+    {
+      "characters" : 14330,
+      "file" : "mac-catalyst.md",
+      "markdownSHA256" : "de9121480676f9c4337fd510d15271ac26377b9bb33400d44ef171f78b075009",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/mac-catalyst.md",
+      "sourceSHA256" : "9a23fca563cab527f4fa2e43f4272759893587f8506a09712988edaf9b12caf2",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/mac-catalyst",
+      "topic" : "mac-catalyst"
+    },
+    {
+      "characters" : 41884,
+      "file" : "machine-learning.md",
+      "markdownSHA256" : "83d041a3fe06d90921049541c15910acc81471b63a5fbc5e5ab65ae75a88f4dc",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/machine-learning.md",
+      "sourceSHA256" : "ce0b34bda2fcc5b8cffd3b6e8cf351a64b0464a2eaee40dc915a54172d277706",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/machine-learning",
+      "topic" : "machine-learning"
+    },
+    {
+      "characters" : 9649,
+      "file" : "managing-accounts.md",
+      "markdownSHA256" : "79786aba0bdcba76b56db1a3bb7a192662944851e07584f605302f0b74269ae4",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/managing-accounts.md",
+      "sourceSHA256" : "1142c94d06bc9438ce334eb55c74eea198f12868e6b15628031cc9102079f3b3",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/managing-accounts",
+      "topic" : "managing-accounts"
+    },
+    {
+      "characters" : 8344,
+      "file" : "managing-notifications.md",
+      "markdownSHA256" : "12bea9afa271cb65d1ee80c50d45387173a9a7f9cbf9fbfdb86b48407764f4a6",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/managing-notifications.md",
+      "sourceSHA256" : "0412850e71f129afa900ddc84096fb72523cf0bfe9d9e5a33d9c9d58be59cb17",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/managing-notifications",
+      "topic" : "managing-notifications"
+    },
+    {
+      "characters" : 21363,
+      "file" : "maps.md",
+      "markdownSHA256" : "e58fb07d6f50ce25918a6481ff2d1950124d3b21b2e980631b0c9d65488c6146",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/maps.md",
+      "sourceSHA256" : "febb927d8a892df4a89a81b7ec4232c8e53f615176d792a4e6ff7fd4925c338d",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/maps",
+      "topic" : "maps"
+    },
+    {
+      "characters" : 21182,
+      "file" : "materials.md",
+      "markdownSHA256" : "e470bd7f22f16787897b40c03bf50cfbe76ea13a39c4871a3bf3cbaf326fbc29",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/materials.md",
+      "sourceSHA256" : "ba2b1ef4fe2c09e2d4d6e48e9664ef4ee8bc10317463646343cb593f953e40f5",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/materials",
+      "topic" : "materials"
+    },
+    {
+      "characters" : 17583,
+      "file" : "menus.md",
+      "markdownSHA256" : "e6db8d622f4064858fb2d9bd35774d79482e2d3af74826fd8c5b22a885a0c01e",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/menus.md",
+      "sourceSHA256" : "358e7919d68af36e4714078e93a3c45d5de8e8e5058ba7faa3da17a7827192e2",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/menus",
+      "topic" : "menus"
+    },
+    {
+      "characters" : 3990,
+      "file" : "menus-and-actions.md",
+      "markdownSHA256" : "f79639bfc8dafd6b7be99282b77a3372c5be4d692e4d8477a35b332eeb1d9a6e",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/menus-and-actions.md",
+      "sourceSHA256" : "18f26f5a35a2629670dbc1b38473c2054c689d779f155ab0a8abed016dc158eb",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/menus-and-actions",
+      "topic" : "menus-and-actions"
+    },
+    {
+      "characters" : 6640,
+      "file" : "modality.md",
+      "markdownSHA256" : "90ed1b28f9d55fbfbd8c7e2a3189e2eff32c1dfa31db4b1a6f442218860ca16e",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/modality.md",
+      "sourceSHA256" : "3e63542fb91d5a29e4123110315734d60c609761cbd3b4384a9da2d81e53f4dd",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/modality",
+      "topic" : "modality"
+    },
+    {
+      "characters" : 9296,
+      "file" : "motion.md",
+      "markdownSHA256" : "8683b7d595ec03dcab802fb93abdd0043fa7727f6a85379b9c6a7ae59406ad9a",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/motion.md",
+      "sourceSHA256" : "52843d680c67f4170114591e5fa1af30baf4db5b025d602527869ecd04fe5bac",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/motion",
+      "topic" : "motion"
+    },
+    {
+      "characters" : 9924,
+      "file" : "multitasking.md",
+      "markdownSHA256" : "248920b765e9bfea1d04d69d62265e1a18a5a3cf7cc5d88c88673bf679f74227",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/multitasking.md",
+      "sourceSHA256" : "4ca6c3036da1ef4fa484e1cb4809d57e1b1196bda382b0be99fdb92c802e1e9f",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/multitasking",
+      "topic" : "multitasking"
+    },
+    {
+      "characters" : 1856,
+      "file" : "navigation-and-search.md",
+      "markdownSHA256" : "ce14af239bc6533478e0197904e85d8270d9a90f8d3461d56c02aa451aad2d31",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/navigation-and-search.md",
+      "sourceSHA256" : "597bb2519c478a7734eb4405c355e728e90580f0d415a65eaaa5706ff48bc2c6",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/navigation-and-search",
+      "topic" : "navigation-and-search"
+    },
+    {
+      "characters" : 6839,
+      "file" : "nearby-interactions.md",
+      "markdownSHA256" : "f56d309cf580bc7853a74c7a2a1f939c2711d3f9d208e94b2a09036278d4c937",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/nearby-interactions.md",
+      "sourceSHA256" : "20fce2cc3917d8cf61f4bd20042ea763336e6bfa35b4e22cd04e023b2281219e",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/nearby-interactions",
+      "topic" : "nearby-interactions"
+    },
+    {
+      "characters" : 4567,
+      "file" : "nfc.md",
+      "markdownSHA256" : "cf745ab63f048c586669c7e03d49fb01a48405f1ff8e6bb9e82adfec4ae61ea5",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/nfc.md",
+      "sourceSHA256" : "cf745ab63f048c586669c7e03d49fb01a48405f1ff8e6bb9e82adfec4ae61ea5",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/nfc",
+      "topic" : "nfc"
+    },
+    {
+      "characters" : 16516,
+      "file" : "notifications.md",
+      "markdownSHA256" : "42125c9d4fe1482ced88ab1835e154ca68f6e00b4b5bc110b1f4b8e46453405e",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/notifications.md",
+      "sourceSHA256" : "9bf51c694ded2d08c3084316c145b11587436f84c97eed5955585a3e93c89707",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/notifications",
+      "topic" : "notifications"
+    },
+    {
+      "characters" : 9843,
+      "file" : "offering-help.md",
+      "markdownSHA256" : "f2d7b867747b0b450b754a1fa383a19af276fd5ca229887fa0afd2b1f694d2e2",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/offering-help.md",
+      "sourceSHA256" : "0ad5c321fabd7892602cc053dc9a28fdf3b2df7eae25cdf041f97ad627f8eed5",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/offering-help",
+      "topic" : "offering-help"
+    },
+    {
+      "characters" : 6016,
+      "file" : "onboarding.md",
+      "markdownSHA256" : "c6e6e81017b6ea0fd4a9cef757bb6607c9709f232c3b823d8ba9068c0f044b54",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/onboarding.md",
+      "sourceSHA256" : "f9f50c0e49023defb35ca941ba962ee20edf7ca8fdaaa3c1e8c150072ade7896",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/onboarding",
+      "topic" : "onboarding"
+    },
+    {
+      "characters" : 4461,
+      "file" : "ornaments.md",
+      "markdownSHA256" : "9d56623d031fbaf984d130cee05fe32a391023f903e7330d17e6d8aa09b06157",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/ornaments.md",
+      "sourceSHA256" : "36d5e9b1b9a93b4bc125b3d4e83d086de7824f91be106768c5b1466fe3d2b0db",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/ornaments",
+      "topic" : "ornaments"
+    },
+    {
+      "characters" : 5207,
+      "file" : "outline-views.md",
+      "markdownSHA256" : "bed747f1fdf296136a8fd4bd05220d2360afb14c7e5274ff16521e6203fc714b",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/outline-views.md",
+      "sourceSHA256" : "f4c78a8f58b427e0910bc1649cfa306dee9ea0973fea0d8f13c4ca1aeeca0827",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/outline-views",
+      "topic" : "outline-views"
+    },
+    {
+      "characters" : 10431,
+      "file" : "page-controls.md",
+      "markdownSHA256" : "4c03a90f8fd667e9fd5159ac0a5b116bd8df1be0dd96e077daafbde8c1d014f1",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/page-controls.md",
+      "sourceSHA256" : "cd31137e38afb81f1bb3bd67c04e00465f9d1ff611acd34dde72f08524c9ac15",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/page-controls",
+      "topic" : "page-controls"
+    },
+    {
+      "characters" : 6536,
+      "file" : "panels.md",
+      "markdownSHA256" : "8cbf4daa38554506774bb095580fc325b0e1c7d141497f9ce5dc30949984e3bd",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/panels.md",
+      "sourceSHA256" : "3316372d42fc78835d43c88f7a81c85aed81a7a1b96c9c6eda7791a32f2763af",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/panels",
+      "topic" : "panels"
+    },
+    {
+      "characters" : 2683,
+      "file" : "path-controls.md",
+      "markdownSHA256" : "285dacfab3e8fe270c6c7b6dff065303c6c67c37b31a389477df37658f57ddaf",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/path-controls.md",
+      "sourceSHA256" : "3c4193e0d3f040bf86974be112053138b5c4b494f6b0ca7f571b54feb35097a9",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/path-controls",
+      "topic" : "path-controls"
+    },
+    {
+      "characters" : 8566,
+      "file" : "patterns.md",
+      "markdownSHA256" : "bf318b6f47beaf5b851c77706ae8740622cd6bc2455a86cfb04258046d1f46a3",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/patterns.md",
+      "sourceSHA256" : "f135ddca3f23978b725340c86fffd58cbe05acc70e9325613c5372a73212e2fb",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/patterns",
+      "topic" : "patterns"
+    },
+    {
+      "characters" : 2653,
+      "file" : "photo-editing.md",
+      "markdownSHA256" : "3684374f02b5a816c4fed977b115a41d4829f013921b4a6b2f9b90b814a96054",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/photo-editing.md",
+      "sourceSHA256" : "3684374f02b5a816c4fed977b115a41d4829f013921b4a6b2f9b90b814a96054",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/photo-editing",
+      "topic" : "photo-editing"
+    },
+    {
+      "characters" : 8389,
+      "file" : "pickers.md",
+      "markdownSHA256" : "a66ceccffab6d24d720d8e81a8ecc9b5bf6a7e98a7649bf0f36b1cd3762bea4c",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/pickers.md",
+      "sourceSHA256" : "07839c98bb40c6476aa52079620337db2d9b63b115100a8f080a0f42f6d64918",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/pickers",
+      "topic" : "pickers"
+    },
+    {
+      "characters" : 15445,
+      "file" : "playing-audio.md",
+      "markdownSHA256" : "88c889a6f21b18ae6b6d5c12ecd7902fc044cc5769e3db7b834670767e443a2f",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/playing-audio.md",
+      "sourceSHA256" : "a628f176988d3a826656e8df1eeede4866beb841121036eb7876b0b4d93125fb",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/playing-audio",
+      "topic" : "playing-audio"
+    },
+    {
+      "characters" : 17870,
+      "file" : "playing-haptics.md",
+      "markdownSHA256" : "08ffeef5834d880c69bb092bf7e9a5794095b8a979be57247f88b3c426850908",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/playing-haptics.md",
+      "sourceSHA256" : "2953a75346eb3a0250965a615c5e01e1be35bc0d397110d024fe38153a3d4f95",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/playing-haptics",
+      "topic" : "playing-haptics"
+    },
+    {
+      "characters" : 18651,
+      "file" : "playing-video.md",
+      "markdownSHA256" : "6568bfe487ebec5c3ab36038e5e6ad45effead63701845c1099023aa1bee549b",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/playing-video.md",
+      "sourceSHA256" : "f7e96e2de6ae23fe39339db4df034cd2e5cb9d2b5030e37b18e547b4f33d4c0c",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/playing-video",
+      "topic" : "playing-video"
+    },
+    {
+      "characters" : 35238,
+      "file" : "pointing-devices.md",
+      "markdownSHA256" : "f733f1f0cb03e5881e22362eb51633c5708ed5dd738b4d90e2a7b7a2e8cf4512",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/pointing-devices.md",
+      "sourceSHA256" : "884ea192986401054378f7ef95e92625b7f576dcc800475362f4428ebaf2724f",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/pointing-devices",
+      "topic" : "pointing-devices"
+    },
+    {
+      "characters" : 4296,
+      "file" : "pop-up-buttons.md",
+      "markdownSHA256" : "5a78e8deb57247c0dd7703c3a62780ae90935c3ebc8e499bd18dcbff0717b8c4",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/pop-up-buttons.md",
+      "sourceSHA256" : "2d59a805228634be31fa62bb5b43bde10e7f34774392f967e2921500a3a1bcdd",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/pop-up-buttons",
+      "topic" : "pop-up-buttons"
+    },
+    {
+      "characters" : 5696,
+      "file" : "popovers.md",
+      "markdownSHA256" : "298062ff6014348564ad32715a41146b6a2b8ee1da4aaee1e3621c1de4be69dd",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/popovers.md",
+      "sourceSHA256" : "df36e9db954a447302e966631a407b0dd42544e5c7ecba310cd766c6d737559a",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/popovers",
+      "topic" : "popovers"
+    },
+    {
+      "characters" : 2607,
+      "file" : "presentation.md",
+      "markdownSHA256" : "48361d5eacf3d45f2989e6001f13b6bb64341ff18636afc7818e32b9b65715d1",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/presentation.md",
+      "sourceSHA256" : "b7132c340458cf705f362cfda53a37288553d3d1ee993e9c481da4cf47bddfd0",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/presentation",
+      "topic" : "presentation"
+    },
+    {
+      "characters" : 4108,
+      "file" : "printing.md",
+      "markdownSHA256" : "725b57acd0c95df46fa1cd2341c8f79b5d8feafd0402ef0aa317ff1f39f03806",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/printing.md",
+      "sourceSHA256" : "7805f85972215cba33ed73aa13f48d19571decba4a05c4d9904732c02d3d9033",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/printing",
+      "topic" : "printing"
+    },
+    {
+      "characters" : 23303,
+      "file" : "privacy.md",
+      "markdownSHA256" : "19b1faabaad9748bc4ee2d168ba9d83b4a2efcaf15a16da8c4987cf5a69d8897",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/privacy.md",
+      "sourceSHA256" : "36941fc6fe56c73b537635ad7fa8fc3222296121a4c1870fa6c3cecd79ef359c",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/privacy",
+      "topic" : "privacy"
+    },
+    {
+      "characters" : 9293,
+      "file" : "progress-indicators.md",
+      "markdownSHA256" : "c43fffed9272d6bffbc5bf45f261767125dfa5cdf1e61f155f623c84db6f50b7",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/progress-indicators.md",
+      "sourceSHA256" : "b876cb83c6bf0f9c473e680b6a756787312a5d5384adeb921c125ec11aaa2626",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/progress-indicators",
+      "topic" : "progress-indicators"
+    },
+    {
+      "characters" : 5593,
+      "file" : "pull-down-buttons.md",
+      "markdownSHA256" : "e4aec733cc1d52553ab0f9aa0e70b5eb620d95b0226a36282ecbec425d4ccaa5",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/pull-down-buttons.md",
+      "sourceSHA256" : "8773092beb551e6f6c18e112eb2a3839e5922d5303306bd53f73add1355aba45",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/pull-down-buttons",
+      "topic" : "pull-down-buttons"
+    },
+    {
+      "characters" : 1940,
+      "file" : "rating-indicators.md",
+      "markdownSHA256" : "d23c8a9a95779496f36566799a1f3999ac489dfc4cc6cd40e4b9cfc44e0c828a",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/rating-indicators.md",
+      "sourceSHA256" : "9a09dcd6a79c6e2683394528b5c796f3d0c77650023af2dfbe95134fb1f62d34",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/rating-indicators",
+      "topic" : "rating-indicators"
+    },
+    {
+      "characters" : 4339,
+      "file" : "ratings-and-reviews.md",
+      "markdownSHA256" : "cf7fbdd7d4cddb2d13ee766d0e0c04d30c4190da56316997556bcea994c83651",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/ratings-and-reviews.md",
+      "sourceSHA256" : "cf7fbdd7d4cddb2d13ee766d0e0c04d30c4190da56316997556bcea994c83651",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/ratings-and-reviews",
+      "topic" : "ratings-and-reviews"
+    },
+    {
+      "characters" : 7604,
+      "file" : "remotes.md",
+      "markdownSHA256" : "1b551aff67853789dab4a7a6865661e0b8ed7b810c8b08a4c3b77769621f1c25",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/remotes.md",
+      "sourceSHA256" : "1f0538c68342bd049e36a701906ac1ae78bb0631fec8296868d6af899f232fab",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/remotes",
+      "topic" : "remotes"
+    },
+    {
+      "characters" : 11434,
+      "file" : "researchkit.md",
+      "markdownSHA256" : "e4d1d0f03d7bd09b5f8457a2a5c52fc9cdcb33828270019344e19fc3f606389f",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/researchkit.md",
+      "sourceSHA256" : "e4d1d0f03d7bd09b5f8457a2a5c52fc9cdcb33828270019344e19fc3f606389f",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/researchkit",
+      "topic" : "researchkit"
+    },
+    {
+      "characters" : 24693,
+      "file" : "right-to-left.md",
+      "markdownSHA256" : "fd221e00698a92750546ae06f4ea8b4f3fc5b87c31265cdf64434b371744caa1",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/right-to-left.md",
+      "sourceSHA256" : "01a64dba624b37f2e0ff500db5b8901c4bebec3d2949706908a15dd3a6f2cbda",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/right-to-left",
+      "topic" : "right-to-left"
+    },
+    {
+      "characters" : 14863,
+      "file" : "scroll-views.md",
+      "markdownSHA256" : "b0417012ab90a42d872cd037b107f51e78f961f8d455cb8a258dc0c8a59e73e8",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/scroll-views.md",
+      "sourceSHA256" : "fb83a3e15287e82e4404c98a19184d07d600dcc3813e37e4a98d62e1b14da335",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/scroll-views",
+      "topic" : "scroll-views"
+    },
+    {
+      "characters" : 16583,
+      "file" : "search-fields.md",
+      "markdownSHA256" : "a2572be00360960e4be5ceedd1f7e4dbf28891762b9ca9970e834681fe9457b0",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/search-fields.md",
+      "sourceSHA256" : "c8e476b2fa8904f6e60064f664ebc7afbdf9124afca7c90c84467f6e173ee707",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/search-fields",
+      "topic" : "search-fields"
+    },
+    {
+      "characters" : 5948,
+      "file" : "searching.md",
+      "markdownSHA256" : "cc0787869409b0fc249761a1930991be9ff5b40a0abd3ab3e953e86cfdf4c544",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/searching.md",
+      "sourceSHA256" : "0ea19600d3c8edc0e27eac2702839ed9590e02f326821a314f30cae9882ac178",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/searching",
+      "topic" : "searching"
+    },
+    {
+      "characters" : 8151,
+      "file" : "segmented-controls.md",
+      "markdownSHA256" : "143eecc26e917e0465e5d7c7b5aa567268894f2fef60efb72f813911bd1e40b1",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/segmented-controls.md",
+      "sourceSHA256" : "10c0b3bbf4b272af9d24b58314aa13aeaeeb98f71d484d0339bcd23e89a4d778",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/segmented-controls",
+      "topic" : "segmented-controls"
+    },
+    {
+      "characters" : 3496,
+      "file" : "selection-and-input.md",
+      "markdownSHA256" : "740b6978e5e870121ca56989daa8971ea01726269504b45121534e915df7251e",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/selection-and-input.md",
+      "sourceSHA256" : "636997f0c26a4810d9c9c297fc1e35c7fcbc70d5fd32cce2c7ec2068e89ff922",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/selection-and-input",
+      "topic" : "selection-and-input"
+    },
+    {
+      "characters" : 7782,
+      "file" : "settings.md",
+      "markdownSHA256" : "3418352e744524441df9023b5a6a8871e0e5f93ef0785418b15a83d6e6e080b7",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/settings.md",
+      "sourceSHA256" : "0d0b43730c06e20d85e50b3619f42dccf96c88470039d81fd374193827221569",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/settings",
+      "topic" : "settings"
+    },
+    {
+      "characters" : 32972,
+      "file" : "sf-symbols.md",
+      "markdownSHA256" : "7a5209642ee203fa1f09f42325754ab2f5fe8e26f3000a650d186559e6c734e6",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/sf-symbols.md",
+      "sourceSHA256" : "63eadc9eaabf5bf9e466430c961d843f977ce11bf31fd88d3151f04a51ba1a90",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/sf-symbols",
+      "topic" : "sf-symbols"
+    },
+    {
+      "characters" : 18392,
+      "file" : "shareplay.md",
+      "markdownSHA256" : "5ce0677c93991862fcc20df39bbe814e0c972a70ad7712acb078f0e8d5e5b992",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/shareplay.md",
+      "sourceSHA256" : "2cf90c02c992648333aeaa54c7e161589080f32752138891cdc3a81c0f5787f0",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/shareplay",
+      "topic" : "shareplay"
+    },
+    {
+      "characters" : 2848,
+      "file" : "shazamkit.md",
+      "markdownSHA256" : "30b81299c4b7e982ae8d8698d5142fe28ffd1b0d9ba25d4418270ff0cae34631",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/shazamkit.md",
+      "sourceSHA256" : "ff36ba9510f0d9809df4b9f418e68445734c291ef927fe05244398c1d6704b61",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/shazamkit",
+      "topic" : "shazamkit"
+    },
+    {
+      "characters" : 15983,
+      "file" : "sheets.md",
+      "markdownSHA256" : "ad456f60f5e2e1485114bb226a1fd25b3f9a0392861c7f48300899d19679fece",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/sheets.md",
+      "sourceSHA256" : "4727a03d66a26fa4e3747ed8a02cca544ab26a1d4230c0160a10b02528c44347",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/sheets",
+      "topic" : "sheets"
+    },
+    {
+      "characters" : 9581,
+      "file" : "sidebars.md",
+      "markdownSHA256" : "b37db2b112b35965dcc396627e331f7ed3e8f51d04769858f1d9754f8159ee4c",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/sidebars.md",
+      "sourceSHA256" : "40f89c33e0e7441352dbd5a4973d1b7672e90fb483a6017acdf8ce1d62c9677e",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/sidebars",
+      "topic" : "sidebars"
+    },
+    {
+      "characters" : 25661,
+      "file" : "sign-in-with-apple.md",
+      "markdownSHA256" : "77616c13976168c5d17bdee9f1bfa890f4d85cc3825c49f1def714ff81714089",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/sign-in-with-apple.md",
+      "sourceSHA256" : "435d4d7177ca2900c2a73fa98713c8a4f4518135185ae486397f5800a0d9e632",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple",
+      "topic" : "sign-in-with-apple"
+    },
+    {
+      "characters" : 15264,
+      "file" : "siri.md",
+      "markdownSHA256" : "2551ede1245ca3760a8bc1e1aef53d1b644cc2fd37216f9d03a732a2671aa6ec",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/siri.md",
+      "sourceSHA256" : "31e08fd7f60eca41e1b2c1c20fa86dcfd8304b8104ad65fe70e4f14c87658ec3",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/siri",
+      "topic" : "siri"
+    },
+    {
+      "characters" : 7567,
+      "file" : "sliders.md",
+      "markdownSHA256" : "25199ccdc043fa68cd0b1728c23b1472acd2e1812020cae4626a63f223e1bbb9",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/sliders.md",
+      "sourceSHA256" : "3a0d3b2e7142eda46d7ede2c0965699dbebfddb82e608006e69690989e062774",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/sliders",
+      "topic" : "sliders"
+    },
+    {
+      "characters" : 6448,
+      "file" : "snippets.md",
+      "markdownSHA256" : "a6433d473ea815d6696477da8fd95a2badae33a0aa61ea00e65b6787121bc53c",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/snippets.md",
+      "sourceSHA256" : "092ab74e157396b0211887fd5bc3bd2ebf5f79a1a4fe70b7ad96884104d82a52",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/snippets",
+      "topic" : "snippets"
+    },
+    {
+      "characters" : 12937,
+      "file" : "spatial-layout.md",
+      "markdownSHA256" : "c0b55a8d328b5fb118624b4a27f20a988a0d65f91a9d7b1cf35b6e4cf5e2f97c",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/spatial-layout.md",
+      "sourceSHA256" : "fc0b0ce6879bdc62f74a4af9a49dcfe597e766bc4db61197415ee5f9f2dcc8e5",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/spatial-layout",
+      "topic" : "spatial-layout"
+    },
+    {
+      "characters" : 8908,
+      "file" : "split-views.md",
+      "markdownSHA256" : "e780bd035eaa42d8ed3ab328f07546dbe3ef513067b5dab48ce8f4fce60b71b6",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/split-views.md",
+      "sourceSHA256" : "6b26195243b2f291b8e822b089f8aadcff1fc1a9c99ff5d95ac2d9c6717e56ca",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/split-views",
+      "topic" : "split-views"
+    },
+    {
+      "characters" : 1599,
+      "file" : "status.md",
+      "markdownSHA256" : "4716745cee8547486297b791bd08e26341fa610030463a405d2972b521727a6e",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/status.md",
+      "sourceSHA256" : "e687acba7a05bc05cf694e1c54a8ce6955cdceb2f010b56add909c8c5c6993a9",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/status",
+      "topic" : "status"
+    },
+    {
+      "characters" : 3080,
+      "file" : "status-bars.md",
+      "markdownSHA256" : "ef2768097a21d8cd85d7c42b19082e1794b405a4b593d847cac46444e1f2b77f",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/status-bars.md",
+      "sourceSHA256" : "ef2768097a21d8cd85d7c42b19082e1794b405a4b593d847cac46444e1f2b77f",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/status-bars",
+      "topic" : "status-bars"
+    },
+    {
+      "characters" : 2190,
+      "file" : "steppers.md",
+      "markdownSHA256" : "0b1c8050cbc816caa4a96e8bf613429ca2d12e4170a0f91d5620de13dd9da318",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/steppers.md",
+      "sourceSHA256" : "73319572f3489d6b7c30326317ac08ca5ee1ea8f6d77ed9feab2c342e84534df",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/steppers",
+      "topic" : "steppers"
+    },
+    {
+      "characters" : 3527,
+      "file" : "system-experiences.md",
+      "markdownSHA256" : "48f50c3108b2763d25b34b0059b5e429d8bf16aae5bc3986d524a820ccec0110",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/system-experiences.md",
+      "sourceSHA256" : "72cd9d3a1644400928e3ed3f4f4569dc2b265d3b49aeb3c262ebcd96244efc94",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/system-experiences",
+      "topic" : "system-experiences"
+    },
+    {
+      "characters" : 13411,
+      "file" : "tab-bars.md",
+      "markdownSHA256" : "1d3d0e935b6ffcf02b572f7c720434d599e350852163531c6b161daa0b6b2573",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/tab-bars.md",
+      "sourceSHA256" : "cb75ce6dafed58fe0ad35ab63f79a0e1e7897af27cd4586af81f214ed9a773d4",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/tab-bars",
+      "topic" : "tab-bars"
+    },
+    {
+      "characters" : 4473,
+      "file" : "tab-views.md",
+      "markdownSHA256" : "b1d598e31e686f5b737d5ef21ac54079439ad9123cdf372605b2bbafeb06dec2",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/tab-views.md",
+      "sourceSHA256" : "c56cc995fad2d481f25891422dca71977c3a41da301f1b823e3199d89ad34d0a",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/tab-views",
+      "topic" : "tab-views"
+    },
+    {
+      "characters" : 19940,
+      "file" : "tap-to-pay-on-iphone.md",
+      "markdownSHA256" : "4e18f6d89df29be3e4bc69b80ad6fe7784400bed7115fc5cb4bebe2b26653106",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/tap-to-pay-on-iphone.md",
+      "sourceSHA256" : "f9e8c35d5b254ee5ec94cbba2251806f781903d0b00ebaf8fc76b25bbb096ad1",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone",
+      "topic" : "tap-to-pay-on-iphone"
+    },
+    {
+      "characters" : 10647,
+      "file" : "technologies.md",
+      "markdownSHA256" : "5e9b0ebd140a5d2d8b455d6577b0bda077218c391cdfa6284da9dc6d8dbb50ea",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/technologies.md",
+      "sourceSHA256" : "8515f466e06c5e6df11517da6df26c6b6628fd3f5047f1d4797ae2ff25a94300",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/technologies",
+      "topic" : "technologies"
+    },
+    {
+      "characters" : 6883,
+      "file" : "text-fields.md",
+      "markdownSHA256" : "6a9f23cf2bd04d88711fbf37a1076a8dc04ea8361f221a1112618c838a0d2491",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/text-fields.md",
+      "sourceSHA256" : "1f5125cd0e6ca65cb3b0a633b49333b218d0b33a73c93ad891a42dc9d1d93ec1",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/text-fields",
+      "topic" : "text-fields"
+    },
+    {
+      "characters" : 3312,
+      "file" : "text-views.md",
+      "markdownSHA256" : "fafd113a687d033a2f3f506ab503e194c362e38f1de99dd60cf848ed37a33d97",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/text-views.md",
+      "sourceSHA256" : "aa894de0faa962a028694d04bfe81813b5b4edd8416068b965e76171c25a882a",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/text-views",
+      "topic" : "text-views"
+    },
+    {
+      "characters" : 49509,
+      "file" : "the-menu-bar.md",
+      "markdownSHA256" : "690c8d84c0b6401222875117081309d3fb938601c6c0ce3647536aca049bc154",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/the-menu-bar.md",
+      "sourceSHA256" : "73f115800ea2359a62980d77be426a9775409bcdbdf083eb5be6c867a1f9c5e1",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/the-menu-bar",
+      "topic" : "the-menu-bar"
+    },
+    {
+      "characters" : 12133,
+      "file" : "toggles.md",
+      "markdownSHA256" : "ba6acebc96ea59c68a6c87325e0eadbf0725c5483788332c2c8083dc00e6b491",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/toggles.md",
+      "sourceSHA256" : "334392408c945ef6f90910e67838e191d48970097827dc36e151b83129cc9fa2",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/toggles",
+      "topic" : "toggles"
+    },
+    {
+      "characters" : 3182,
+      "file" : "token-fields.md",
+      "markdownSHA256" : "4816bc469f054b189da1044af4d23874f8f277544bd0648c5352320a6cf9ddb9",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/token-fields.md",
+      "sourceSHA256" : "5c7becfed122e2413e732664ddf66e2b908ae982b1fbe9745b0836a30767647d",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/token-fields",
+      "topic" : "token-fields"
+    },
+    {
+      "characters" : 22668,
+      "file" : "toolbars.md",
+      "markdownSHA256" : "8be8025fdb14b07daf770dcba5c0f165ee3731310f7967df43d9b80066bdd621",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/toolbars.md",
+      "sourceSHA256" : "739c8aead3d44d44f1fa369be07fb97667d666d667a383fdc4b1c731cc738dec",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/toolbars",
+      "topic" : "toolbars"
+    },
+    {
+      "characters" : 11401,
+      "file" : "top-shelf.md",
+      "markdownSHA256" : "a1a477e875fdfd9f2e85d344aab83ce418a89f3c67ea0f16630e1ecce83b3148",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/top-shelf.md",
+      "sourceSHA256" : "3f562b82ad2bd3a4fa6f920bdab8dd2525e0e35f87d3978653261ce9384be0e4",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/top-shelf",
+      "topic" : "top-shelf"
+    },
+    {
+      "characters" : 75048,
+      "file" : "typography.md",
+      "markdownSHA256" : "81551e63f33ab3587b8a487a7c0ab3fd6f66c8543614dad07de86f8a0d579245",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/typography.md",
+      "sourceSHA256" : "d6d23810029d2f772f18d76fd76025108fc87b16ca46a6ca0ac0187b585091e1",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/typography",
+      "topic" : "typography"
+    },
+    {
+      "characters" : 4973,
+      "file" : "undo-and-redo.md",
+      "markdownSHA256" : "e63d34f3e3978cf6f4004d37cfff0752b4c690690bc95f7f2289fa2b2a0e017f",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/undo-and-redo.md",
+      "sourceSHA256" : "3f59978e26c1ccc76956e9861527a3c17c012fca696795293c9e2d7e43080674",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/undo-and-redo",
+      "topic" : "undo-and-redo"
+    },
+    {
+      "characters" : 15195,
+      "file" : "virtual-keyboards.md",
+      "markdownSHA256" : "734af87afe9ff69391da7fd870685a087f54ce7177a2679131b2fce5b5c02cec",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/virtual-keyboards.md",
+      "sourceSHA256" : "7f1f167cf6215990239ffe853bb0aadfc73ace6a8816bee05f7bc7c727188608",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/virtual-keyboards",
+      "topic" : "virtual-keyboards"
+    },
+    {
+      "characters" : 8187,
+      "file" : "voiceover.md",
+      "markdownSHA256" : "810177b3f15755703d52e77a36b68442809a9fdc563ff1fbc2def7fd5e429280",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/voiceover.md",
+      "sourceSHA256" : "4d038a2e93928d582ccf32191879783fc14a52b94c9489c0b90bd0a03d92dcaa",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/voiceover",
+      "topic" : "voiceover"
+    },
+    {
+      "characters" : 52704,
+      "file" : "wallet.md",
+      "markdownSHA256" : "789ac065a99250fdd440c3d7619d1c833c8a7cfea4a704467bb1ac314df194ea",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/wallet.md",
+      "sourceSHA256" : "74b0b5039ee6fbb2dc1ffdcbfc059f83282f32a577ccf0a68f4a57a4e067c90e",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/wallet",
+      "topic" : "wallet"
+    },
+    {
+      "characters" : 4349,
+      "file" : "watch-faces.md",
+      "markdownSHA256" : "ef94a4c86b11cca39fe1012a5e7cfd27c4a07fdeb7aa597f9b926e1e4769c65d",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/watch-faces.md",
+      "sourceSHA256" : "ef94a4c86b11cca39fe1012a5e7cfd27c4a07fdeb7aa597f9b926e1e4769c65d",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/watch-faces",
+      "topic" : "watch-faces"
+    },
+    {
+      "characters" : 1851,
+      "file" : "web-views.md",
+      "markdownSHA256" : "447102d7e16104140a3a8d9bf4d6ff3e6d174c1e5165131a7c453a1a6e75c542",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/web-views.md",
+      "sourceSHA256" : "447102d7e16104140a3a8d9bf4d6ff3e6d174c1e5165131a7c453a1a6e75c542",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/web-views",
+      "topic" : "web-views"
+    },
+    {
+      "characters" : 52216,
+      "file" : "widgets.md",
+      "markdownSHA256" : "ed10bf772cb5d5b4ca40f25d955db80d9b72ebe133e81c0cdaa0b713f6ba11b1",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/widgets.md",
+      "sourceSHA256" : "43eedd55696f26077169ad2b03d895f2fa247e8364e2f8921303333c1fd6b560",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/widgets",
+      "topic" : "widgets"
+    },
+    {
+      "characters" : 19081,
+      "file" : "windows.md",
+      "markdownSHA256" : "1263d3a4387c2e71ff33709a51abd1cdb9e22489a5917cee004dbcc444ff4cd3",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/windows.md",
+      "sourceSHA256" : "1b707b1d4c6a1f48f5dd93722d9f31255d695a10ce767588ca6556926966b3b5",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/windows",
+      "topic" : "windows"
+    },
+    {
+      "characters" : 6705,
+      "file" : "workouts.md",
+      "markdownSHA256" : "44fc2318b7bd8f6968fa63950bfef5b558eadb8992a1f288aead47fc0fa50c8d",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/workouts.md",
+      "sourceSHA256" : "ce7af293dcae767eff99eab1aeee836d442808aa1f1b891d381b6431e98eb14e",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/workouts",
+      "topic" : "workouts"
+    },
+    {
+      "characters" : 11273,
+      "file" : "writing.md",
+      "markdownSHA256" : "0ff7da09ab5827cbcc8f937722d38dde8ea8e7f0151b3b49af96ac39e090d0be",
+      "markdownURL" : "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/writing.md",
+      "sourceSHA256" : "c204c0134df669ad5db0935f5e04d9b291ca9e42467a913c97690dce6f9354e1",
+      "sourceURL" : "https://developer.apple.com/design/human-interface-guidelines/writing",
+      "topic" : "writing"
+    }
+  ],
+  "retrieval" : "Downloaded from Apple during this run",
+  "source" : "https://developer.apple.com/design/human-interface-guidelines"
+}

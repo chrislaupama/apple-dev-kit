@@ -1,0 +1,2 @@
+Copied from /Users/chrislaupama/Library/Developer/Xcode/CodingAssistant/ExportedPlugins/27A266a/claude
+Xcode 27.0 Build version 27A266a

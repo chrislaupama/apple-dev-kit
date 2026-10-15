@@ -1,0 +1,19 @@
+{
+  "name": "chris-local",
+  "description": "Chris's private Apple-development plugins.",
+  "owner": {
+    "name": "Chris Laupama"
+  },
+  "plugins": [
+    {
+      "name": "apple-dev",
+      "source": "./plugins/apple-dev",
+      "description": "Personal SwiftUI app-building kit adapted from Bitrig's skills (private)."
+    },
+    {
+      "name": "xcode-integration",
+      "source": "./plugins/xcode-integration",
+      "description": "Apple's Xcode 27 agent plugin: Xcode MCP tools (build, run, tests, previews, device interaction, console, debugger, crash logs, localization) and Apple-authored skills. Copied by scripts/sync-xcode-plugin.sh."
+    }
+  ]
+}
